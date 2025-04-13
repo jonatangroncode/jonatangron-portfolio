@@ -1,5 +1,10 @@
 # 👨‍💻 Jonatan Grön – Portfolio
 
+![Repo status](https://img.shields.io/github/repo-status/jonatangroncode/jonatangron-portfolio)
+![Last commit](https://img.shields.io/github/last-commit/jonatangroncode/jonatangron-portfolio)
+
+
+
 Detta är min personliga portfolio byggd med **React**, **Tailwind CSS v4** och **Vite**.  
 Syftet är att visa upp mina projekt, min bakgrund och min kompetens inom webbutveckling.
 
@@ -12,7 +17,7 @@ Syftet är att visa upp mina projekt, min bakgrund och min kompetens inom webbut
 - Tailwind CSS 4
 - React Router
 - ESLint (JS-standard)
-- GitHub Pages / Vercel / Netlify (för deployment)
+- GitHub Pages / Vercel 
 
 ---
 
