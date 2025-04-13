@@ -41,3 +41,9 @@ yarn-error.log*
 
 # Byggfiler (om du kör build senare)
 build/
+
+# Next.js
+/node_modules
+/coverage
+/.next/
+/build

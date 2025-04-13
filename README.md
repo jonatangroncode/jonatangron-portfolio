@@ -1,24 +1,30 @@
-# Jonatan Grön – Portfolio
+# 👨‍💻 Jonatan Grön – Portfolio
 
-Detta är min portfolio byggd med React, Tailwind CSS och React Router.  
-Syftet är att visa upp mina projekt, erfarenheter och kompetens som utvecklare.
+Detta är min personliga portfolio byggd med **React**, **Tailwind CSS v4** och **Vite**.  
+Syftet är att visa upp mina projekt, min bakgrund och min kompetens inom webbutveckling.
 
-## Teknisk stack
-- React
-- Tailwind CSS
+---
+
+## 🚀 Teknisk stack
+
+- React 19
+- Vite 6
+- Tailwind CSS 4
 - React Router
-- Vite
+- ESLint (JS-standard)
+- GitHub Pages / Vercel / Netlify (för deployment)
 
+---
 
-# React + Vite
+## ⚙️ Projektstruktur
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```bash
+src/
+├── components/       # Globala komponenter (t.ex. Navbar)
+├── pages/            # Sidor: Home, About, Projects, CV, Contact
+├── App.jsx           # App-router
+├── main.jsx          # Inträde till appen
+├── index.css         # Tailwindimport + ev. global styling
+tailwind.config.js    # Tailwind-konfig
+vite.config.js        # Vite + Tailwind-plugin
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
