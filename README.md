@@ -25,7 +25,7 @@ Syftet är att visa upp mina projekt, min bakgrund och min kompetens inom webbut
 
 ```bash
 src/
-├── components/       # Globala komponenter (t.ex. Navbar)
+├── components/       # Globala komponenter (Navbar, ProjectCard)
 ├── pages/            # Sidor: Home, About, Projects, CV, Contact
 ├── App.jsx           # App-router
 ├── main.jsx          # Inträde till appen
