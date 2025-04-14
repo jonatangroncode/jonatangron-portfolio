@@ -9,6 +9,7 @@ const Projects = () => {
       description: "En väderapp som visar väderprognoser för olika platser.",
       githubLink: "https://github.com/jonatangroncode/weather-app",
       demoLink: "https://weather-demo.vercel.app",
+      image: "../../src/assets/react.svg",
     },
     {
       title: "JensenFlix",
@@ -34,6 +35,7 @@ const Projects = () => {
             description={project.description}
             githubLink={project.githubLink}
             demoLink={project.demoLink}
+            image={project.image}
           />
         ))}
       </div>
