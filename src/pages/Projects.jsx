@@ -10,6 +10,7 @@ const Projects = () => {
       githubLink: "https://github.com/jonatangroncode/weather-app",
       demoLink: "https://weather-demo.vercel.app",
       image: "../../src/assets/react.svg",
+      technologies: ["React", "Tailwind", "OpenWeather API"],
     },
     {
       title: "JensenFlix",
@@ -36,6 +37,7 @@ const Projects = () => {
             githubLink={project.githubLink}
             demoLink={project.demoLink}
             image={project.image}
+            technologies={project.technologies}
           />
         ))}
       </div>

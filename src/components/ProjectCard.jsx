@@ -1,6 +1,13 @@
 import React from "react";
 
-const ProjectCard = ({ title, description, githubLink, demoLink, image }) => {
+const ProjectCard = ({
+  title,
+  description,
+  githubLink,
+  demoLink,
+  image,
+  technologies,
+}) => {
   return (
     <article className="bg-background-dark w-full h-full text-neutral-100 dark:bg-background rounded-xl p-6 shadow-md border border-neutral-800 hover:shadow-lg transition">
       {image && (
@@ -12,6 +19,20 @@ const ProjectCard = ({ title, description, githubLink, demoLink, image }) => {
       )}
       <h3 className="text-xl font-bold mb-2 text-primary">{title}</h3>
       <p className="text-sm mb-4">{description}</p>
+
+      {technologies && technologies.length > 0 && (
+        <ul className="flex flex-wrap gap-2 mb-4">
+          {technologies.map((tech, index) => (
+            <li
+              key={index}
+              className="text-xs px-2 py-1 bg-neutral-800 text-neutral-200 rounded-md border border-neutral-600"
+            >
+              {tech}
+            </li>
+          ))}
+        </ul>
+      )}
+
       <div className="flex gap-4">
         {githubLink && (
           <a
