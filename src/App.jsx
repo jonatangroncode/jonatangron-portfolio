@@ -6,21 +6,24 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import CV from "./pages/CV";
 import Contact from "./pages/Contacts";
+import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen bg-gray-900 text-white">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/cv" element={<CV />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </div>
-    </Router>
+    <ThemeProvider>
+      <Router>
+        <div className="min-h-screen bg-background text-text-light dark:bg-background-dark dark:text-text-dark transition-colors">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/cv" element={<CV />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+      </Router>
+    </ThemeProvider>
   );
 }
 

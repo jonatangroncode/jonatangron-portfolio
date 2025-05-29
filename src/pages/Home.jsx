@@ -1,11 +1,13 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <section className="flex flex-col items-center justify-center text-center min-h-screen px-6 bg-gray-900 text-white">
+    <section className="flex flex-col items-center justify-center text-center min-h-screen px-6 bg-white text-[#111827] dark:bg-[#111827] dark:text-[#f9fafb]">
       <h1 className="text-4xl sm:text-5xl font-bold mb-4">
-        Hej! Jag är <span className="text-lime-400">Jonatan Grön</span>
+        Hej! Jag är{" "}
+        <span className="text-lime-400 dark:text-primary-light">
+          Jonatan Grön
+        </span>
       </h1>
       <p className="text-lg sm:text-xl max-w-xl mb-8">
         Frontendutvecklare med passion för moderna webbapplikationer,

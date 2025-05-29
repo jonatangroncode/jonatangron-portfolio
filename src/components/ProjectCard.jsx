@@ -9,7 +9,7 @@ const ProjectCard = ({
   technologies,
 }) => {
   return (
-    <article className="bg-background-dark w-full h-full text-neutral-100 dark:bg-background rounded-xl p-6 shadow-md border border-neutral-800 hover:shadow-lg transition">
+    <article className="w-full h-full bg-background text-text-light dark:bg-background-dark dark:text-text-dark rounded-xl p-6 shadow-md border border-neutral-800 hover:shadow-lg transition">
       {image && (
         <img
           src={image}
@@ -17,10 +17,12 @@ const ProjectCard = ({
           className="w-full h-48 object-cover rounded-md mb-4 border border-neutral-700"
         />
       )}
-      <h3 className="text-xl font-bold mb-2 text-primary">{title}</h3>
+      <h3 className="text-xl font-bold mb-2 text-primary dark:text-primary-light">
+        {title}
+      </h3>
       <p className="text-sm mb-4">{description}</p>
 
-      {technologies && technologies.length > 0 && (
+      {technologies?.length > 0 && (
         <ul className="flex flex-wrap gap-2 mb-4">
           {technologies.map((tech, index) => (
             <li
